@@ -1,0 +1,236 @@
+<html lang="vi">
+  <head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+   <body>
+ <style>
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+/* MENU CHÍNH */
+.menu {
+    display: flex;
+    background: #fff;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.menu-item {
+    position: relative;
+    padding: 15px 20px;
+    cursor: pointer;
+    color: #243B9A;
+    font-weight: bold;
+}
+.menu-item a {
+    color: #243B9A;
+    text-decoration: none;
+}
+.menu-item:hover,
+.menu-item a:hover {
+    color: #6699CC;
+}
+/* DROPDOWN */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 99;
+}
+.dropdown a {
+    display: block;
+    padding: 12px 20px;
+    color: #243B9A;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+.dropdown a:hover {
+    background: #f0f0f0;
+    color: #000;
+}
+/* HIỂN THỊ DROPDOWN KHI HOVER */
+.menu-item:hover .dropdown {
+    display: block;
+}
+</style>
+<body>
+<div class="menu">
+    <div class="menu-item">
+        <a href="https://himfri1314.github.io/Baocao_tinhoc_nhom1_12V/">TRANG CHỦ</a>
+    </div>
+    <div class="menu-item">
+        THÀNH VIÊN ▼
+        <div class="dropdown">
+            <a href="#">PHƯƠNG DUYÊN</a>
+            <a href="#">MINH CHÂU</a>
+            <a href="#">KHẢ HÂN</a>
+            <a href="#">QUỲNH NHƯ</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        TÀI LIỆU ▼
+        <div class="dropdown">
+            <a href="https://himfri1314.github.io/bai7_nhom1/">BÀI 7</a>
+            <a href="https://himfri1314.github.io/bai8_nhom1/">BÀI 8</a>
+            <a href="https://himfri1314.github.io/bai9_nhom1/">BÀI 9</a>
+            <a href="https://himfri1314.github.io/bai10_nhom1/">BÀI 10</a>
+            <a href="https://himfri1314.github.io/bai11_nhom1/">BÀI 11</a>
+            <a href="https://himfri1314.github.io/bai12_nhom1/">BÀI 12</a>
+            <a href="https://himfri1314.github.io/bai13_nhom1/">BÀI 13</a>
+            <a href="https://himfri1314.github.io/bai14_nhom1/">BÀI 14</a>
+            <a href="https://himfri1314.github.io/bai15_nhom1/">BÀI 15</a>
+            <a href="https://himfri1314.github.io/bai16_nhom1/">BÀI 16</a>
+            <a href="https://himfri1314.github.io/bai17_nhom1/">BÀI 17</a>
+            <a href="https://himfri1314.github.io/bai18_nhom1/">BÀI 18</a>
+        </div>
+    </div>
+</div>
+</body>
+  <body>
+     <!-- Banner -->
+    <div class="banner">
+        <h1 style="text-align:center;text-decorating: none; color: white; padding: 0 30px;">Bài 12: TẠO BIỂU MẪU</h1>
+    </div>
+  </body>
+    <style>
+      body {
+    margin: 0;
+    font-family: 'Arial';
+    background-color: #f2f2f2;
+}
+      /* Banner nền ảnh */
+.banner {
+    width: 100%;
+    height: 300px;
+    background-image: url('bai12.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1 {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+</style>
+   <div id="wp-products">
+    <h1 style="text-align:center;text-decorating: none; color: #243b9a; padding: 0 30px;">LUYỆN TẬP</h1>
+  </div>
+  <div style="background-color: #FFFFFF; padding: 10px;">
+      <h2>Lần lượt tạo các loại phần tử form và các phần tử input với những loại dữ liệu khác nhau và liệt kê ra ba ví dụ có thể sử dụng của từng loại.</h2> 
+  </div>
+      <p>Phần tử Form:<br>
+      -Form cơ bản:<br>
+Ví dụ: Một biểu mẫu đăng ký tài khoản.<br>
+<< form action="/register" method="post"><br>
+   <! - Các phần tử input và nút gửi dữ liệu sẽ được thêm vào đây --><br>
+< /form><br>
+-Form có phần tử select:<br>
+Ví dụ: Form chọn quốc gia.<br>
+< form><br>
+  < label for="country">Quốc gia:< /label><br>
+  < select id="country" name="country"><br>
+    < option value="vietnam">Việt Nam< /option><br>
+    < option value="usa">United States< /option><br>   
+    < option value="uk"> United Kingdom< /option><br>
+<-- Các quốc gia khác có thể được thêm vào đây -><br>
+< /select><br>
+< /form><br>
+- Form với textarea:<br>
+Ví dụ: Một ô nhập văn bản lớn cho người dùng nhập ý kiến hoặc phản hồi.<br>
+< form><br>
+  < label for="feedback">Phản hồi:< /label>< br><br>
+    < textarea id="feedback" name="feedback" rows="4" cols="50">< /textarea><br>
+< /form><br>
+Phần tử Input:<br>
+-Input kiểu text:<br>
+Ví dụ: Ô nhập tên người dùng.<br>
+< form><br>
+  < label for="username"> Tên người dùng: < /label><br>
+    < input type="text" id="username" name="username"><br>
+< /form><br>
+- Input kiểu email:<br>
+Ví dụ: Ô nhập địa chỉ email.<br>
+< form><br>
+  < label for="email">Email:< /label><br>
+    < input type="email" id="email" name="email"><br>
+< /form><br>
+-Input kiểu date:<br>
+Ví dụ: Ô chọn ngày sinh.<br>
+< form><br>
+  < label for="birthdate">Ngày sinh:< /label><br>
+    < input type="date" id="birthdate" name="birthdate"><br>
+</ form></p>
+        <div id="wp-products">
+    <h1 style="text-align:center;text-decorating: none; color: #243b9a; padding: 0 30px;">VẬN DỤNG</h1>
+  </div>
+          <div style="background-color: #FFFFFF; padding: 10px;">
+        <h2>Vận dụng 1: Tạo một biểu mẫu đăng kí thành viên câu lạc bộ.</h2>
+          </div>
+      <p>< !DOCTYPE html><br>
+< html lang="en"><br>
+< head><br>
+< meta charset="UTF-8"><br>
+< meta name="viewport" content="width=device-width, initial-scale=1.0"><br>
+< title>Biểu mẫu đăng ký thành viên< /title><br>
+< /head><br>
+< body><br>
+< h2>Đăng ký thành viên< /h2><br>
+< form action="/submit_registration" method="post"><br>
+  < label for="fullname">Họ và tên:< /label>< br><br>
+  < input type="text" id="fullname" name="fullname" required>< br><br>
+  < label for="email">Email:< /label>< br><br>
+  < input type="email" id="email" name="email" required>< br><br>
+  < label for="birthdate">Ngày sinh:< /label>< br><br>
+  < input type="date" id="birthdate" name="birthdate" required>< br><br>
+  < label for="membership">Loại hình thành viên:< /label>< br><br>
+  < select id="membership" name="membership"><br>
+    < option value="basic">Thành viên cơ bản< /option><br>
+    < option value="premium">Thành viên cao cấp< /option><br>
+  < /select>< br><br>
+  < input type="submit" value="Đăng ký"><br>
+< /form><br>
+< /body><br>
+< /html></p>
+<div style="background-color: #FFFFFF; padding: 10px;">
+        <h2>Vận dụng 2: Sửa lại mã nguồn của trang web đã viết trong Nhiệm vụ 2, Bài 11 để thêm một liên kết cho cụm từ Đăng kí. Khi nháy chuột vào liên kết, trang web đã viết ở câu 1 sẽ được hiển thị trong iframe.</h2>
+</div>
+<p>< !DOCTYPE html><br>
+< html lang="vi"><br>
+< head><br>
+< meta charset="UTF-8"><br>
+< meta name="viewport" content="width=device-width, initial-scale=1.0"><br>
+< title>Trang web nghệ thuật< /title><br>
+< style><br>
+  /* CSS để định dạng iframe */<br>
+  iframe {<br>
+    width: 100%;<br>
+    height: 500px;<br>
+    border: 1px solid #ccc;<br>
+  }<br>
+< /style><br>
+< /head><br>
+< body><br>
+< h1>Nghệ thuật< /h1><br>
+< !-- Chèn ảnh minh họa --><br>
+< img src="link_den_anh_minh_hoa.jpg" alt="Hình ảnh minh họa" width="500" height="300"><br>
+< !-- Chèn bài hát Quốc ca --><br>
+< audio controls><br>
+  < source src="link_den_bai_hat_quoc_ca.mp3" type="audio/mpeg"><br>
+  Trình duyệt của bạn không hỗ trợ phát audio.<br>
+< /audio><br>
+< !-- Thêm liên kết "Đăng ký" --><br>
+< p>< a href="link_den_trang_web.html" target="iframe_content">Đăng ký< /a>< /p><br>
+< !-- iframe để hiển thị trang web đã viết ở câu 1 --><br>
+< iframe name="iframe_content" frameborder="0">< /iframe><br>
+< /body><br>
+< /html></p>
