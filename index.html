@@ -128,111 +128,109 @@ body {
   <div style="background-color: #FFFFFF; padding: 10px;">
       <h2>Lần lượt tạo các loại phần tử form và các phần tử input với những loại dữ liệu khác nhau và liệt kê ra ba ví dụ có thể sử dụng của từng loại.</h2> 
   </div>
-      <p>Phần tử Form:<br>
-      -Form cơ bản:<br>
-Ví dụ: Một biểu mẫu đăng ký tài khoản.<br>
-<< form action="/register" method="post"><br>
-   <! - Các phần tử input và nút gửi dữ liệu sẽ được thêm vào đây --><br>
-< /form><br>
--Form có phần tử select:<br>
-Ví dụ: Form chọn quốc gia.<br>
-< form><br>
-  < label for="country">Quốc gia:< /label><br>
-  < select id="country" name="country"><br>
-    < option value="vietnam">Việt Nam< /option><br>
-    < option value="usa">United States< /option><br>   
-    < option value="uk"> United Kingdom< /option><br>
-<-- Các quốc gia khác có thể được thêm vào đây -><br>
-< /select><br>
-< /form><br>
-- Form với textarea:<br>
-Ví dụ: Một ô nhập văn bản lớn cho người dùng nhập ý kiến hoặc phản hồi.<br>
-< form><br>
-  < label for="feedback">Phản hồi:< /label>< br><br>
-    < textarea id="feedback" name="feedback" rows="4" cols="50">< /textarea><br>
-< /form><br>
-Phần tử Input:<br>
--Input kiểu text:<br>
-Ví dụ: Ô nhập tên người dùng.<br>
-< form><br>
-  < label for="username"> Tên người dùng: < /label><br>
-    < input type="text" id="username" name="username"><br>
-< /form><br>
-- Input kiểu email:<br>
-Ví dụ: Ô nhập địa chỉ email.<br>
-< form><br>
-  < label for="email">Email:< /label><br>
-    < input type="email" id="email" name="email"><br>
-< /form><br>
--Input kiểu date:<br>
-Ví dụ: Ô chọn ngày sinh.<br>
-< form><br>
-  < label for="birthdate">Ngày sinh:< /label><br>
-    < input type="date" id="birthdate" name="birthdate"><br>
-</ form></p>
+      <p>Phần tử Form:</p> 
+      <p>-Form cơ bản:</p>
+      <p>Ví dụ: Một biểu mẫu đăng ký tài khoản.</p>
+      <p><< form action="/register" method="post"></p>
+      <p><! - Các phần tử input và nút gửi dữ liệu sẽ được thêm vào đây --><p>
+      <p>< /form></p>
+      <p>-Form có phần tử select:</p>
+      <p>Ví dụ: Form chọn quốc gia.</p>
+      <p>< form></p>
+      <p>< label for="country">Quốc gia:< /label></p>
+      <p>< select id="country" name="country"></p>
+      <p>< option value="vietnam">Việt Nam< /option></p>
+      <p>< option value="usa">United States< /option></p>   
+      <p>< option value="uk"> United Kingdom< /option></p>
+      <p><-- Các quốc gia khác có thể được thêm vào đây -></p>
+      <p>< /select></p>
+      <p>< /form></p>
+      <p>- Form với textarea:</p>
+      <p>Ví dụ: Một ô nhập văn bản lớn cho người dùng nhập ý kiến hoặc phản hồi.</p>
+      <p>< form></p>
+      <p>< label for="feedback">Phản hồi:< /label>< br></p>
+      <p>< textarea id="feedback" name="feedback" rows="4" cols="50">< /textarea></p>
+      <p>< /form></p>
+      <p>Phần tử Input:</p>
+      <p>-Input kiểu text:</p>
+      <p>Ví dụ: Ô nhập tên người dùng.</p>
+      <p>< form></p>
+      <p>< label for="username"> Tên người dùng: < /label></p>
+      <p>< input type="text" id="username" name="username"></p>
+      <p>< /form></p>
+      <p>- Input kiểu email:</p>
+      <p>Ví dụ: Ô nhập địa chỉ email.</p>
+      <p>< form></p>
+      <p>< label for="email">Email:< /label></p>
+      <p>< input type="email" id="email" name="email"></p>
+      <p>< /form></p>
+      <p>-Input kiểu date:</p>
+      <p>Ví dụ: Ô chọn ngày sinh.</p>
+      <p>< form></p>
+      <p>< label for="birthdate">Ngày sinh:< /label></p>
+      <p>< input type="date" id="birthdate" name="birthdate"></p>
+      <p></ form></p>
         <div id="wp-products">
     <h1 style="text-align:center;text-decorating: none; color: #243b9a; padding: 0 30px;">VẬN DỤNG</h1>
   </div>
           <div style="background-color: #FFFFFF; padding: 10px;">
         <h2>Vận dụng 1: Tạo một biểu mẫu đăng kí thành viên câu lạc bộ.</h2>
           </div>
-      <p>< !DOCTYPE html><br>
-< html lang="en"><br>
-< head><br>
-< meta charset="UTF-8"><br>
-< meta name="viewport" content="width=device-width, initial-scale=1.0"><br>
-< title>Biểu mẫu đăng ký thành viên< /title><br>
-< /head><br>
-< body><br>
-< h2>Đăng ký thành viên< /h2><br>
-< form action="/submit_registration" method="post"><br>
-  < label for="fullname">Họ và tên:< /label>< br><br>
-  < input type="text" id="fullname" name="fullname" required>< br><br>
-  < label for="email">Email:< /label>< br><br>
-  < input type="email" id="email" name="email" required>< br><br>
-  < label for="birthdate">Ngày sinh:< /label>< br><br>
-  < input type="date" id="birthdate" name="birthdate" required>< br><br>
-  < label for="membership">Loại hình thành viên:< /label>< br><br>
-  < select id="membership" name="membership"><br>
-    < option value="basic">Thành viên cơ bản< /option><br>
-    < option value="premium">Thành viên cao cấp< /option><br>
-  < /select>< br><br>
-  < input type="submit" value="Đăng ký"><br>
-< /form><br>
-< /body><br>
-< /html></p>
+      <p>< !DOCTYPE html></p>
+      <p>< html lang="en"></p>
+      <p>< head></p>
+      <p>< meta charset="UTF-8"></p>
+      <p>< meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+      <p>< title>Biểu mẫu đăng ký thành viên< /title></p>
+      <p>< /head></p>
+      <p>< body></p>
+      <p>< h2>Đăng ký thành viên< /h2></p>
+      <p>< form action="/submit_registration" method="post"></p>
+      <p>< label for="fullname">Họ và tên:< /label>< br></p>
+      <p>< input type="text" id="fullname" name="fullname" required>< br></p>
+      <p>< label for="email">Email:< /label>< br></p>
+      <p>< input type="email" id="email" name="email" required>< br></p>
+      <p>< label for="birthdate">Ngày sinh:< /label>< br></p>
+      <p>< input type="date" id="birthdate" name="birthdate" required>< br></p>
+      <p>< label for="membership">Loại hình thành viên:< /label>< br></p>
+      <p>< select id="membership" name="membership"></p>
+      <p>< option value="basic">Thành viên cơ bản< /option></p>
+      <p>< option value="premium">Thành viên cao cấp< /option></p>
+      <p>< /select>< br></p>
+      <p>< input type="submit" value="Đăng ký"></p>
+      <p>< /form></p>
+      <p>< /body></p>
+      <p>< /html></p>
 <div style="background-color: #FFFFFF; padding: 10px;">
         <h2>Vận dụng 2: Sửa lại mã nguồn của trang web đã viết trong Nhiệm vụ 2, Bài 11 để thêm một liên kết cho cụm từ Đăng kí. Khi nháy chuột vào liên kết, trang web đã viết ở câu 1 sẽ được hiển thị trong iframe.</h2>
 </div>
-<p>< !DOCTYPE html><br>
-< html lang="vi"><br>
-< head><br>
-< meta charset="UTF-8"><br>
-< meta name="viewport" content="width=device-width, initial-scale=1.0"><br>
-< title>Trang web nghệ thuật< /title><br>
-< style><br>
-  /* CSS để định dạng iframe */<br>
-  iframe {<br>
-    width: 100%;<br>
-    height: 500px;<br>
-    border: 1px solid #ccc;<br>
-  }<br>
-< /style><br>
-< /head><br>
-< body><br>
-< h1>Nghệ thuật< /h1><br>
-< !-- Chèn ảnh minh họa --><br>
-< img src="link_den_anh_minh_hoa.jpg" alt="Hình ảnh minh họa" width="500" height="300"><br>
-< !-- Chèn bài hát Quốc ca --><br>
-< audio controls><br>
-  < source src="link_den_bai_hat_quoc_ca.mp3" type="audio/mpeg"><br>
-  Trình duyệt của bạn không hỗ trợ phát audio.<br>
-< /audio><br>
-< !-- Thêm liên kết "Đăng ký" --><br>
-< p>< a href="link_den_trang_web.html" target="iframe_content">Đăng ký< /a>< /p><br>
-< !-- iframe để hiển thị trang web đã viết ở câu 1 --><br>
-< iframe name="iframe_content" frameborder="0">< /iframe><br>
-< /body><br>
-
-< /html></p>
-
+<p>< !DOCTYPE html></p>
+<p>< html lang="vi"></p>
+<p>< head></p>
+<p>< meta charset="UTF-8"></p>
+<p>< meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<p>< title>Trang web nghệ thuật< /title></p>
+<p>< style></p>
+  <p>/* CSS để định dạng iframe */</p>
+  <p>iframe {</p>
+  <p>width: 100%;</p>
+  <p>height: 500px;</p>
+  <p>border: 1px solid #ccc;</p>
+  <p>}</p>
+<p>< /style></p>
+<p>< /head></p>
+<p>< body></p>
+<p>< h1>Nghệ thuật< /h1></p>
+<p>< !-- Chèn ảnh minh họa --></p>
+<p>< img src="link_den_anh_minh_hoa.jpg" alt="Hình ảnh minh họa" width="500" height="300"></p>
+<p>< !-- Chèn bài hát Quốc ca --></p>
+<p>< audio controls></p>
+<p>  < source src="link_den_bai_hat_quoc_ca.mp3" type="audio/mpeg"></p>
+<p>  Trình duyệt của bạn không hỗ trợ phát audio.</p>
+<p>< /audio></p>
+<p>< !-- Thêm liên kết "Đăng ký" --></p>
+<p>< p>< a href="link_den_trang_web.html" target="iframe_content">Đăng ký< /a>< /p></p>
+<p>< !-- iframe để hiển thị trang web đã viết ở câu 1 --></p>
+<p>< iframe name="iframe_content" frameborder="0">< /iframe></p>
+<p>< /body></p>
+<p>< /html></p>
